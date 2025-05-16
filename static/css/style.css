@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+}
+
+:root {
+    --cor-fundo: #09090B;
+    --cor-fundo-secundario: #18181B;
+    --cor-branco: #fff;
+    --cor-preto: #000;
+    --cor-texto: #A1A1AA;
+    --cor-destaque: #F7B733;
+}
+
+body {
+    background-color: var(--cor-fundo);
+}
+
+.d-flex {
+    display: flex;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.between {
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 25px 0px;
+}
+
+header nav a {
+    color: var(--cor-texto);
+    margin: 0px 10px;
+}
+
+header nav a:hover {
+    color: var(--cor-branco);
+}
+
+.btn {
+    padding: 10px 20px;
+    border: 1px solid var(--cor-branco);
+    text-align: center;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: var(--cor-branco);
+    color: var(--cor-preto);
+}
+
+.btn-primary:hover {
+    color: var(--cor-branco) !important;
+    background-color: transparent !important;
+}
+
+.btn-outline {
+    color: var(--cor-branco);
+    background-color: transparent;
+}
+
+.btn-outline:hover {
+    background-color: var(--cor-branco) !important;
+    color: var(--cor-preto) !important;
+}
+
+.column {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.title {
+    font-size: 4em;
+    color: var(--cor-branco);
+}
+
+.subtitle {
+    font-size: 3em;
+    color: var(--cor-texto);
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.bg-img {
+    height: 90vh;
+    padding-top: 100px;
+    background-image: url('../img/sol.png');
+    background-position: center bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.segunda-sec {
+    background-color: var(--cor-fundo-secundario);
+}
+
+.destaque {
+    font-weight: 500;
+    color: var(--cor-destaque);
+    font-size: 0.875rem;
+}
+
+.title-sec {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--cor-branco);
+}
