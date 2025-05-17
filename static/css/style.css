@@ -31,8 +31,17 @@ body {
     margin: 0 auto;
 }
 
+.margin {
+    width: 100%;
+}
+
 .between {
     justify-content: space-between;
+    align-items: center;
+}
+
+.around {
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -54,6 +63,7 @@ header nav a:hover {
     border: 1px solid var(--cor-branco);
     text-align: center;
     border-radius: 5px;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .btn-primary {
@@ -115,6 +125,27 @@ header nav a:hover {
 
 .title-sec {
     font-weight: 800;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--cor-branco);
+}
+
+.container div p {
+    color: var(--cor-texto);
+}
+
+.padding {
+    padding: 100px 0px 10px 0px;
+    gap: 100px;
+}
+
+.gap {
+    gap: 10px;
+}
+
+.icones a {
+    transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.icones a:hover {
+    scale: 1.05;
 }
